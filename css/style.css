@@ -488,6 +488,8 @@ h1, h2, h3, h4, h5, h6 {
   -o-transform: translate(120%, 0);
   transform: translate(120%, 0);
   opacity: 0;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 .header-frame.active {
