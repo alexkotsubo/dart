@@ -852,6 +852,11 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: center;
 	border-radius: 100%;
 	overflow: hidden;
+	-webkit-flex: 0 0 60px;
+	-moz-flex: 0 0 60px;
+	-ms-flex: 0 0 60px;
+	-o-flex: 0 0 60px;
+	flex: 0 0 60px;
 	width: 60px;
 	height: 60px;
 	margin-right: 25px;
@@ -896,6 +901,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-block {
+	background: #fff;
 	border-radius: 5px;
 	-webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
