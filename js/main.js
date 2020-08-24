@@ -338,7 +338,6 @@ window.onload = function() {
 
 	for(let i = 0, length = anchors.length; i < length; i++) {
 		anchors[i].addEventListener('click', function(e) {
-			body.style.overflow = 'auto';
 			let class_anchors = anchors[i].className.split('');
 			let blockid = '';
 			for(let i = 0, length = class_anchors.length; i < length; i++) {
