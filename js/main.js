@@ -126,11 +126,28 @@ for(let i = 0, length = content.length; i < length; i++) {
 
 $(document).ready(function() {
 	$('.customers-slider').on('init', function(slick) {
-		
+		let customersSlides = document.querySelectorAll('.customers-slide-text');
+		let slideTheHeight;
+
+		for(let i = 0, length = customersSlides.length; i < length; i++) {
+			if (slideTheHeight != undefined) {
+				if (slideTheHeight < customersSlides[i].offsetHeight) {
+					slideTheHeight = customersSlides[i].offsetHeight;
+				}
+			} else {
+				slideTheHeight = customersSlides[i].offsetHeight;
+			}
+
+			if (i + 1 == length) {
+				for(let i = 0, length = customersSlides.length; i < length; i++) {
+					customersSlides[i].style.height = slideTheHeight + 'px';
+				}
+			}
+		}
 	});
 
-	$('.customers-slider').slick({
-		autoplay: true,
+	$('.customers-slider').slick({/*
+		autoplay: true,*/
 		vertical: true,
 		verticalSwiping: true,
 		slidesToShow: 2,
